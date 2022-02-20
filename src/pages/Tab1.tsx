@@ -1,13 +1,16 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonImg, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import InicioContenedor from '../components/InicioContenedor';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+        <IonToolbar color="dark">
+          <div className='flex'>
+            <IonImg className='w-20' src="/assets/logo_transparente.png" />
+            <IonTitle>Inicio</IonTitle>
+          </div>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -16,7 +19,7 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <InicioContenedor />
       </IonContent>
     </IonPage>
   );

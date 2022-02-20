@@ -2,6 +2,7 @@
 http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
+
 :root {
   /** primary **/
   --ion-color-primary: #3880FF;
@@ -197,7 +198,7 @@ http://ionicframework.com/docs/theming/ */
    */
 
   .md body {
-    --ion-background-color: #121212;
+    --ion-background-color: #b8b8b8;
     --ion-background-color-rgb: 18,18,18;
 
     --ion-text-color: #ffffff;

@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { home, cloud, person } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -54,18 +54,18 @@ const App: React.FC = () => (
             <Redirect to="/tab1" />
           </Route>
         </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+        <IonTabBar color='dark' className='shadow-lg' slot="bottom">
+          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab1" href="/tab1">
+            <IonIcon icon={home}/>
+            <IonLabel>Inicio</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab2" href="/tab2">
+            <IonIcon icon={cloud} />
+            <IonLabel>Publicar</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab3" href="/tab3">
+            <IonIcon icon={person} />
+            <IonLabel>Perfil</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
