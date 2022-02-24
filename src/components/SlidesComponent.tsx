@@ -1,21 +1,19 @@
 import React from 'react';
-import { IonContent, IonPage } from '@ionic/react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { IonSlide, IonSlides } from '@ionic/react';
+import { CardComponent } from './CardComponent';
 
-import 'swiper/swiper.min.css';
+const slideOpts = {
+  initialSlide: 1,
+  speed: 400
+};
 
 const SlidesComponent: React.FC = () => {
     return (
-      <IonPage>
-        <p>xdxd</p>
-      <IonContent>
-        <Swiper>
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-        </Swiper>
-      </IonContent>
-    </IonPage>
+      <IonSlides options={slideOpts}>
+          <IonSlide><CardComponent direccion="/assets/logo_transparente.png" /></IonSlide>
+          <IonSlide><CardComponent direccion="/assets/prueba.jpg" /></IonSlide>
+          <IonSlide><h1>xddd</h1></IonSlide>
+      </IonSlides>
       );
 };
 export default SlidesComponent;
