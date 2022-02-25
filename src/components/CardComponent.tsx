@@ -5,7 +5,9 @@ import {
   IonCardSubtitle,
   IonCardTitle,
   IonCardContent,
+  IonImg
 } from "@ionic/react";
+import './CardComponent.css';
 
 interface CardComponentProps {
     direccion: any;
@@ -14,7 +16,7 @@ interface CardComponentProps {
 export const CardComponent: React.FC<CardComponentProps> = ({ direccion }) => {
   return (
     <IonCard>
-      <img src={ direccion } className="w-24" />
+      <IonImg src={ direccion } className="img" />
       <IonCardHeader>
         <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
         <IonCardTitle>Card Title</IonCardTitle>

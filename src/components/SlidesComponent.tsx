@@ -3,7 +3,7 @@ import { IonSlide, IonSlides } from '@ionic/react';
 import { CardComponent } from './CardComponent';
 
 const slideOpts = {
-  initialSlide: 1,
+  initialSlide: 0,
   speed: 400
 };
 
