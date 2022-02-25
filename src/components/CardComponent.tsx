@@ -16,7 +16,13 @@ interface CardComponentProps {
 export const CardComponent: React.FC<CardComponentProps> = ({ direccion }) => {
   return (
     <IonCard>
-      <IonImg src={ direccion } className="img" />
+      <div className="flex flex-col">
+        <div className="self-start flex m-2">
+          <IonImg src="assets/perfil.jpeg" className="perfil" />
+          <h1 className="m-2">Mario Duran</h1>
+        </div>
+        <IonImg src={ direccion } className="img" />
+      </div>
       <IonCardHeader>
         <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
         <IonCardTitle>Card Title</IonCardTitle>

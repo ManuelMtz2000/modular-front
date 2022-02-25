@@ -10,9 +10,9 @@ const slideOpts = {
 const SlidesComponent: React.FC = () => {
     return (
       <IonSlides options={slideOpts}>
-          <IonSlide><CardComponent direccion="/assets/logo_transparente.png" /></IonSlide>
-          <IonSlide><CardComponent direccion="/assets/prueba.jpg" /></IonSlide>
-          <IonSlide><h1>xddd</h1></IonSlide>
+          <IonSlide><CardComponent direccion="/assets/cuaderno.jpeg" /></IonSlide>
+          <IonSlide><CardComponent direccion="/assets/sombrilla.jpeg" /></IonSlide>
+          <IonSlide><CardComponent direccion="/assets/sombrilla 2.jpeg" /></IonSlide>
       </IonSlides>
       );
 };
