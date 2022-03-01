@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonImg, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import PerfilComponent from '../components/PerfilComponent';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {
@@ -10,6 +10,10 @@ const Tab3: React.FC = () => {
           <div className='flex'>
             <IonImg className='w-20' src="/assets/logo_transparente.png" />
             <IonTitle>Perfil</IonTitle>
+            <div className="self-center flex mr-2">
+              <IonImg src="assets/perfil.jpeg" className="perfil" />
+              <h1 className="m-2">Mario Duran</h1>
+            </div>
           </div>
         </IonToolbar>
       </IonHeader>
@@ -19,7 +23,7 @@ const Tab3: React.FC = () => {
             <IonTitle size="large">Tab 3</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <PerfilComponent />
       </IonContent>
     </IonPage>
   );
