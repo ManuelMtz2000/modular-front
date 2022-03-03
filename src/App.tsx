@@ -33,6 +33,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import AcercaDeComponent from './components/AcercaDeComponent';
+import AyudaComponent from './components/AyudaComponent';
 
 setupIonicReact();
 
@@ -41,29 +43,35 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/tab1">
+          <Route exact path="/inicio">
             <Tab1 />
           </Route>
-          <Route exact path="/tab2">
+          <Route exact path="/publicacion">
             <Tab2 />
           </Route>
-          <Route path="/tab3">
+          <Route exact path="/perfil">
             <Tab3 />
           </Route>
+          <Route exact path="/ayuda">
+            <AyudaComponent />
+          </Route>
+          <Route exact path="/acerca">
+            <AcercaDeComponent />
+          </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/inicio" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar color='dark' className='shadow-lg' slot="bottom">
-          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab1" href="/tab1">
+          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab1" href="/inicio">
             <IonIcon icon={home}/>
             <IonLabel>Inicio</IonLabel>
           </IonTabButton>
-          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab2" href="/tab2">
+          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab2" href="/publicacion">
             <IonIcon icon={cloud} />
             <IonLabel>Publicar</IonLabel>
           </IonTabButton>
-          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab3" href="/tab3">
+          <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab3" href="/perfil">
             <IonIcon icon={person} />
             <IonLabel>Perfil</IonLabel>
           </IonTabButton>

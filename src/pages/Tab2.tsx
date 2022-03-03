@@ -1,5 +1,4 @@
 import { IonContent, IonHeader, IonImg, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import PublicarComponent from '../components/PublicarComponent';
 import './Tab2.css';
 
