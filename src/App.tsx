@@ -35,6 +35,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import AcercaDeComponent from './components/AcercaDeComponent';
 import AyudaComponent from './components/AyudaComponent';
+import PublicacionesComponent from './components/PublicacionesComponent';
 
 setupIonicReact();
 
@@ -57,6 +58,9 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/acerca">
             <AcercaDeComponent />
+          </Route>
+          <Route exact path="/publicaciones">
+            <PublicacionesComponent />
           </Route>
           <Route exact path="/">
             <Redirect to="/inicio" />
