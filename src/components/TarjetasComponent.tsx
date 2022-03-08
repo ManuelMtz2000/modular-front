@@ -2,7 +2,6 @@ import React from "react";
 import {
     IonCardContent,
     IonCardHeader,
-    IonCardSubtitle,
     IonCardTitle,
     IonImg,
   IonItem,

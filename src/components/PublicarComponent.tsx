@@ -5,6 +5,7 @@ import './ExploreContainer.css';
 
 const ExploreContainer: React.FC = () => {
   const [checked, setChecked] = useState(false);
+  const [codigo, setCodigo] = useState(false);
   const [opcion, setOpcion] = useState(false);
   const [categoria, setCategoria] = useState<string>('1');
   //<IonLabel>Tipo de publicacón: {JSON.stringify(checked)}</IonLabel>
@@ -15,6 +16,18 @@ const ExploreContainer: React.FC = () => {
             <IonToggle className='bg-gray-200 mx-2 rounded-xl' color='warning' checked={checked} onIonChange={e => setChecked(e.detail.checked)} />
             <IonLabel>Encontre un objeto</IonLabel>
         </div>
+        <div className='flex flex-col mt-5 justify-center items-center'>
+            <IonLabel>¿Conoces el código del estudiante?</IonLabel>
+            <div>
+                <IonLabel>No</IonLabel>
+                <IonToggle className='bg-gray-200 mx-2 rounded-xl' color='warning' checked={codigo} onIonChange={e => setCodigo(e.detail.checked)} />
+                <IonLabel>Si</IonLabel>
+            </div>
+        </div>
+        <div className='mb-3'>
+                <IonLabel>Código del estudiante:</IonLabel>
+                <IonInput className='bg-gray-200'></IonInput>
+            </div>
         <form action="" className='mt-4'>
             <div className='mb-3'>
                 <IonLabel>Descripción corta:</IonLabel>

@@ -10,9 +10,9 @@ const Tab2: React.FC = () => {
           <div className='flex'>
             <IonImg className='w-20' src="/assets/logo_transparente.png" />
             <IonTitle>Publicar</IonTitle>
-            <div className="self-center flex mr-2">
+            <div className="self-center flex mr-2 items-center">
               <IonImg src="assets/perfil.jpeg" className="perfil" />
-              <h1 className="m-2">Mario Duran</h1>
+              <h1 className="m-2 text-sm">Mario Duran</h1>
             </div>
           </div>
         </IonToolbar>

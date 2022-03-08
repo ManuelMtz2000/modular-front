@@ -36,6 +36,8 @@ import './theme/variables.css';
 import AcercaDeComponent from './components/AcercaDeComponent';
 import AyudaComponent from './components/AyudaComponent';
 import PublicacionesComponent from './components/PublicacionesComponent';
+import RegistroComponent from './components/RegistroComponent';
+import EntrarComponent from './components/EntrarComponent';
 
 setupIonicReact();
 
@@ -65,8 +67,14 @@ const App: React.FC = () => (
           <Route exact path="/">
             <Redirect to="/inicio" />
           </Route>
+          <Route exact path="/registro">
+            <RegistroComponent />  
+          </Route>
+          <Route exact path="/entrar">
+            <EntrarComponent />  
+          </Route>
         </IonRouterOutlet>
-        <IonTabBar color='dark' className='shadow-lg' slot="bottom">
+        <IonTabBar color='dark' className='shadow-lg border-2' slot="bottom">
           <IonTabButton className='text-orange-700 hover:bg-blue-900 hover:text-white' tab="tab1" href="/inicio">
             <IonIcon icon={home}/>
             <IonLabel>Inicio</IonLabel>
