@@ -33,11 +33,12 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import AcercaDeComponent from './components/AcercaDeComponent';
-import AyudaComponent from './components/AyudaComponent';
-import PublicacionesComponent from './components/PublicacionesComponent';
-import RegistroComponent from './components/RegistroComponent';
-import EntrarComponent from './components/EntrarComponent';
+import AcercaDeComponent from './components/Pages/AcercaDeComponent';
+import AyudaComponent from './components/Pages/AyudaComponent'; 
+import PublicacionesComponent from './components/Pages/PublicacionesComponent'; 
+import RegistroComponent from './components/Pages/RegistroComponent'; 
+import EntrarComponent from './components/Pages/EntrarComponent';
+import ReporteComponent from './components/Pages/ReporteComponent';
 
 setupIonicReact();
 
@@ -72,6 +73,9 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/entrar">
             <EntrarComponent />  
+          </Route>
+          <Route exact path="/reportar">
+            <ReporteComponent />  
           </Route>
         </IonRouterOutlet>
         <IonTabBar color='dark' className='shadow-lg border-2' slot="bottom">

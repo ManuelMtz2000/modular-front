@@ -1,6 +1,7 @@
 import React from 'react';
-import { IonButton, IonSlide, IonSlides } from '@ionic/react';
+import { IonButton, IonIcon, IonSlide, IonSlides } from '@ionic/react';
 import { CardComponent } from './CardComponent';
+import { warning } from 'ionicons/icons';
 
 const slideOpts = {
   initialSlide: 0,
@@ -15,6 +16,9 @@ const SlidesComponent: React.FC = () => {
             <div className="flex justify-center">
               <IonButton color="warning">Detalles</IonButton>
               <IonButton color="warning">Es mío</IonButton>
+              <IonButton color="danger" routerLink='/reportar'>
+                <IonIcon icon={warning} />
+              </IonButton>
             </div>
             <CardComponent direccion="/assets/cuaderno.jpeg" />
           </IonSlide>
@@ -22,6 +26,9 @@ const SlidesComponent: React.FC = () => {
             <div className="flex justify-center">
               <IonButton color="warning">Detalles</IonButton>
               <IonButton color="warning">Es mío</IonButton>
+              <IonButton color="danger" routerLink='/reportar'>
+                <IonIcon icon={warning} />
+              </IonButton>
             </div>
             <CardComponent direccion="/assets/sombrilla.jpeg" />
           </IonSlide>
@@ -29,6 +36,9 @@ const SlidesComponent: React.FC = () => {
             <div className="flex justify-center">
               <IonButton color="warning">Detalles</IonButton>
               <IonButton color="warning">Es mío</IonButton>
+              <IonButton color="danger" routerLink='/reportar'>
+                <IonIcon icon={warning} />
+              </IonButton>
             </div>
             <CardComponent direccion="/assets/sombrilla 2.jpeg" />
           </IonSlide>

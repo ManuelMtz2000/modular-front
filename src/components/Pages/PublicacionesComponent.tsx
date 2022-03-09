@@ -1,6 +1,5 @@
 import { IonButton, IonContent, IonHeader, IonItem, IonLabel, IonPage, IonSearchbar, IonToolbar } from "@ionic/react";
-import { Tarjetas } from "./TarjetasComponent";
-import './InicioContenedor.css'
+import { Tarjetas } from "../Componentes/TarjetasComponent";
 
 const PublicacionesComponent: React.FC = () => {
   return (

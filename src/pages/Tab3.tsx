@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonImg, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import PerfilComponent from '../components/PerfilComponent';
+import PerfilComponent from '../components/Tabs/PerfilComponent';
 import './Tab3.css';
 
 const Tab3: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleCard } from "./SimpleCardComponent";
+import { SimpleCard } from "../Componentes/SimpleCardComponent";
 
 const PerfilComponent: React.FC= () => {
   return (

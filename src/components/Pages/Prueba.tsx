@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { IonLoading, IonImg } from '@ionic/react';
 import './Prueba.css';
 import { render } from '@testing-library/react';
-import App from '../App';
 
-const funcion = () => {
+/*const funcion = () => {
   render(
     <App />
   )
-}
+  
+        onDidDismiss={() => funcion()}
+}*/
 
 export const Prueba : React.FC = () => {
   const [showLoading] = useState(true);
@@ -21,7 +22,6 @@ export const Prueba : React.FC = () => {
         spinner="lines"
         cssClass={"my-custom-class"}
         isOpen={showLoading}
-        onDidDismiss={() => funcion()}
         duration={5000}
         />
         </div>

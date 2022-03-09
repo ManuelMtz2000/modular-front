@@ -1,7 +1,7 @@
 import { IonButton, IonCheckbox, IonIcon, IonSearchbar } from "@ionic/react";
 import { ellipsisVerticalOutline } from "ionicons/icons";
-import SlidesComponent from "./SlidesComponent";
-import './InicioContenedor.css'
+import SlidesComponent from "../Componentes/SlidesComponent";
+import './InicioContenedor.css';
 
 const InicioContenedor: React.FC = () => {
   return (

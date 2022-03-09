@@ -1,7 +1,6 @@
 import { IonButton, IonIcon, IonInput, IonLabel, IonSelect, IonSelectOption, IonTextarea, IonToggle } from '@ionic/react';
 import { useState } from 'react';
 import { camera } from 'ionicons/icons';
-import './ExploreContainer.css';
 
 const ExploreContainer: React.FC = () => {
   const [checked, setChecked] = useState(false);

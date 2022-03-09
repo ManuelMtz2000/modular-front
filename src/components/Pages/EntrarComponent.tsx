@@ -38,7 +38,7 @@ const EntrarComponent: React.FC = () => {
                 <IonInput type="password" className='bg-gray-200 rounded-md'></IonInput>
               </div>
             </div>
-            <IonButton className="w-full" color="warning">Entrar</IonButton>
+            <IonButton className="w-full" color="warning" routerLink="/inicio">Entrar</IonButton>
           </div>
         </div>
       </IonContent>

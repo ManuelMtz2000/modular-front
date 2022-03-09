@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonImg, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import PublicarComponent from '../components/PublicarComponent';
+import PublicarComponent from '../components/Tabs/PublicarComponent';
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
