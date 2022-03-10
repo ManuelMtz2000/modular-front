@@ -1,14 +1,10 @@
 import { IonButton, IonContent, IonHeader, IonImg, IonInput, IonLabel, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 import React, { useState } from "react";
 import './EntrarComponent.css';
-
-let bandera = false;
-
-function vista(){
-  bandera = !bandera;
-}
+import axios from 'axios';
 
 const EntrarComponent: React.FC = () => {
+  
   const [placeholder, setPlaceholder] = useState("Código de SIIAU:");
   const [type, setType] = useState("number");
   return (
